@@ -1,6 +1,6 @@
 {
   "chainName": "base",
-  "title": "Desmos Block Explorer",
+  "title": "Inscription Block Explorer",
   "extra": {
     "profile": true,
     "graphqlWs": false
@@ -183,37 +183,7 @@
   },
   "chains": [
     {
-      "network": "desmos-mainnet",
-      "chainType": "Mainnet",
-      "genesis": {
-        "time": "2021-08-31T16:15:00",
-        "height": 1
-      },
-      "prefix": {
-        "consensus": "desmosvalcons",
-        "validator": "desmosvaloper",
-        "account": "desmos"
-      },
-      "primaryTokenUnit": "udsm",
-      "votingPowerTokenUnit": "udsm",
-      "tokenUnits": {
-        "udsm": {
-          "display": "dsm",
-          "exponent": 6
-        }
-      },
-      "endpoints": {
-        "graphql": "https://gql.desmos.forbole.com/v1/graphql",
-        "graphqlWebsocket": "wss://gql.desmos.forbole.com/v1/graphql",
-        "publicRpcWebsocket": "wss://rpc.desmos.forbole.com/websocket"
-      },
-      "marketing": {
-        "matomoURL": "https://analytics.bigdipper.live",
-        "matomoSiteID": "8"
-      }
-    },
-    {
-      "network": "morpheus-apollo-3",
+      "network": "Inscription",
       "chainType": "Testnet",
       "genesis": {
         "time": "2022-10-24T08:00:00",
@@ -224,11 +194,11 @@
         "validator": "desmosvaloper",
         "account": "desmos"
       },
-      "primaryTokenUnit": "udaric",
-      "votingPowerTokenUnit": "udaric",
+      "primaryTokenUnit": "ustake",
+      "votingPowerTokenUnit": "ustake",
       "tokenUnits": {
-        "udaric": {
-          "display": "daric",
+        "ustake": {
+          "display": "stake",
           "exponent": 6
         }
       },

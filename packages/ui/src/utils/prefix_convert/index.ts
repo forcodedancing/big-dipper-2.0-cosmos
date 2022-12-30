@@ -1,14 +1,15 @@
-import chainConfig from '@/chainConfig';
+// import chainConfig from '@/chainConfig';
 import { bech32 } from 'bech32';
 
-const { prefix } = chainConfig();
+// const { prefix } = chainConfig();
 
 export const toValidatorAddress = (address: string) => {
   if (!address) {
     return '';
   }
-  const decode = bech32.decode(address).words;
-  return bech32.encode(prefix.validator, decode);
+  // const decode = bech32.decode(address).words;
+  // return bech32.encode(prefix.validator, decode);
+  return '';
 };
 
 export const isValidAddress = (address: string) => {
