@@ -29,7 +29,7 @@ parsing:
     start_height: 0
     average_block_time: 5s
 database:
-    url: postgres://postgres:pass@127.0.0.1:5432/bdjuno?sslmode=disable
+    url: postgres://postgres:pass@127.0.0.1:5432/postgres?sslmode=disable
     max_open_connections: 1
     max_idle_connections: 1
     partition_size: 100000
