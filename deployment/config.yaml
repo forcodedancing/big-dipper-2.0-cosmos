@@ -1,0 +1,48 @@
+chain:
+    bech32_prefix: cosmos
+    modules:
+        - modules
+        - messages
+        - auth
+        - gov
+        - staking
+        - bank
+        - consensus
+        - pricefeed
+        - actions
+
+node:
+    type: remote
+    config:
+        rpc:
+            client_name: juno
+            address: http://localhost:26750
+            max_connections: 20
+        grpc:
+            address: localhost:9090
+            insecure: true
+parsing:
+    workers: 1
+    listen_new_blocks: true
+    parse_old_blocks: true
+    parse_genesis: true
+    start_height: 0
+    average_block_time: 5s
+database:
+    url: postgres://postgres:pass@127.0.0.1:5432/bdjuno?sslmode=disable
+    max_open_connections: 1
+    max_idle_connections: 1
+    partition_size: 100000
+    partition_batch: 1000
+logging:
+    level: debug
+    format: text
+actions:
+    host: 127.0.0.1
+    port: 3000
+pricefeed:
+    tokens:
+        - name: BNB
+          units:
+            - denom: bnb
+              exponent: 0
