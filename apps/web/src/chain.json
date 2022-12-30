@@ -194,11 +194,11 @@
         "validator": "desmosvaloper",
         "account": "desmos"
       },
-      "primaryTokenUnit": "ustake",
-      "votingPowerTokenUnit": "ustake",
+      "primaryTokenUnit": "ubnb",
+      "votingPowerTokenUnit": "ubnb",
       "tokenUnits": {
-        "ustake": {
-          "display": "stake",
+        "ubnb": {
+          "display": "bnb",
           "exponent": 6
         }
       },
