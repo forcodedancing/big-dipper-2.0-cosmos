@@ -40,6 +40,12 @@ logging:
 actions:
     host: 127.0.0.1
     port: 3000
+    node:
+        rpc:
+            address: http://localhost:26750
+        grpc:
+            address: http://localhost:9090
+            insecure: true
 pricefeed:
     tokens:
         - name: BNB

@@ -10,10 +10,10 @@ echo "bdjuno home:"$BDJUNO
 echo "genesis:"$GENESIS
 
 echo "1. install postgres cli"
-brew install postgresql
+#brew install postgresql
 
 echo "2. install hasura cli"
-curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
+#curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
 
 echo "3. clone repos"
 rm -rf $BDJUNO
@@ -73,7 +73,7 @@ cd $BDJUNO
 cp big-dipper-2.0-cosmos/deployment/config.yaml $BDJUNO/config.yaml
 cp $GENESIS $BDJUNO/genesis.json
 bdjuno parse genesis-file --genesis-file-path $BDJUNO/genesis.json
-bdjuno start
+nohup bdjuno start &
 
 echo "8. start web"
 cd $BDJUNO
